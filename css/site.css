@@ -2,3 +2,22 @@ body {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
+
+.card-title{
+    opacity: 1;
+
+}
+
+.card-title:hover {
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.card-text-center{
+    opacity: 0; 
+}
+
+.card-text-center:hover{
+    opacity: 1;
+    transition: opacity 0.15s;
+}
