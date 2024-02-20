@@ -9,24 +9,32 @@
     <link rel="stylesheet" href="css/site.css">
     <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="images/brand/PortfolioBrand30x30.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Silkscreen&display=swap" rel="stylesheet">
 </head>
 
-<body>
+
+<body class="jetbrains-mono">
     <!-- HELLO HEADER/NAV -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container">
-                <a class="navbar_brand" href="index.html">
-                    <img src="images/brand/PortfolioBrand30x30.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <a class="navbar_brand silkscreen-regular" href="index.html">
+                    <img src="images/brand/PortfolioBrand30x30.png" width="30" height="30" class="d-inline-block align-center" alt="">
+                    <!--
+                    <h1 class="silkscreen-regular d-inline-block"><span class="badge badge-secondary">Noa.Portfolio</span></h1>
+                    -->
                     Portfolio
                 </a>
-                
                 <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarCollapse" 
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toglle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="collapse navbar-collapse" id="navbarCollapse"> <!--  -->
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -38,11 +46,11 @@
                         -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true"    aria-expanded="false">
+                            aria-haspopup="true" aria-expanded="false">
                             Projects
                             </a>
 
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu bg-dark border-0" aria-labelledby="navbarDropdown"> <!-- BG-DARK? -->
                                 <a class="dropdown-item" href="---.html">Project 1</a>
                                 <a class="dropdown-item" href="---.html">Project 2</a>
                                 <a class="dropdown-item" href="---.html">Project 3</a>
@@ -62,37 +70,123 @@
 
     <!-- HELLO GALLERY -->
     
-    <div class="container">
+    <div class="container py-4">
 
-        <div class="row">
-            <div class="col-md-4 offset-md-1 justify-content-center bg-dark"> <!-- d-flex justify-content-center -->
-                <div class="card mt-3 mb-3 bg-transparent">
-                    <img src="images/IFD.png" class="card-img-top p-3" alt="...">
-                    <div class="card-body text-center text-light">
-                        <h5 class="card-title">PROJECT</h5>
-                        <p class="card-text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
+        <div class="row my-4 justify-content-center">
+            <div class="co-md-2 text-light text-center">
+                <h1>PROJECTS</h1>BY NOA
             </div>
+        </div>
 
-
-            <div class="col-md-4 offset-md-2 d-flex justify-content-center bg-dark">  
-                <div class="card mt-3 mb-3">
-                    <img src="images/IFD.png" class="card-img-top" alt="..."> 
+        <div class="row text-center text-light">
+            <div class="col-md-4 offset-md-1 my-4 justify-content-center bg-dark"> <!-- d-flex justify-content-center -->
+                <div class="gallery card mt-3 mb-3 border-0 bg-transparent">
+                    <img src="images/SS.jpg" class="card-img-top p-3" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h4 class="card-title">PROJECT</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!--
+                        <span class="badge badge-primary">Primary</span>
+                        -->
                     </div>
                 </div>
             </div>
+
+
+            <div class="col-md-4 offset-md-2 my-4 justify-content-center bg-dark">  
+                <div class="gallery card mt-3 mb-3 border-0 bg-transparent">
+                    <img src="images/IFD.png" class="card-img-top p-3" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">PROJECT</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 offset-md-1 my-4 justify-content-center bg-dark"> <!-- d-flex justify-content-center -->
+                <div class="gallery card mt-3 mb-3 border-0 bg-transparent">
+                    <img src="images/TV2.jpg" class="card-img-top p-3" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">PROJECT</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 offset-md-2 my-4 d-flex justify-content-center bg-dark">  
+                <div class="gallery card mt-3 mb-3 border-0 bg-transparent">
+                    <img src="images/PP.png" class="card-img-top p-3" alt="..."> 
+                    <div class="card-body">
+                        <h4 class="card-title">PROJECT</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>  
     </div>
 
 
     <!-- HELLO FOOTER-->
-    <footer>
+    
+
+    <!--
+    <div class="container">
+        <footer class="bg-dark text-center text-white ">
         
+        <div class="container p-4 pb-0">
+          
+          <section class="mb-4">
+            
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                
+            </a>
+            
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-github"></i>
+            </a>
+            
+          </section>
+    
+        </div>
+        <div class="card-footer"">
+            2024
+        </div> 
+      </footer>
+    -->
+
+    <!--
+    <footer>
+        <div class="container text-light"> 
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card text-center border-0">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        
+                        </div>
+                        <img class="card-img-bottom" src="images/placeholder.jpg" alt="Card image cap">
+                    </div>
+                </div>
+
+                <div class="col-md-5 offset-md-2">
+                    <div class="card text-center border-0 text-light"></div>
+                        <div class="card-body bg-dark">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer bg-dark text-muted text-light text-center">
+            Noa van Bentem | 2024
+        </div>
     </footer>
+    -->
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
