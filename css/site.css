@@ -46,6 +46,11 @@ header .navbar_brand {
 
 
 /* =========================================================== Main */
+main .col-md-4{
+    min-width: 250px;
+    max-width: 300px;
+}
+
 main .card {
     margin-bottom: 6rem;
     background-color: #343a40;
@@ -89,10 +94,7 @@ footer{
 footer .card{
     background-color: #5667ca;
     box-shadow: 4px 4px 2px 1px rgba(0, 0, 41, 0.2);
-    height: 30vh;
 }
-
-
 
 .btn-social {
     color: #005fd7;
