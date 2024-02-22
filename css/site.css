@@ -1,4 +1,108 @@
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } 
+  
+.jetbrains-mono {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 470;
+    font-style: normal;
+}
+
+
 body {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    background-color: #272935;
+    font-family: "JetBrains Mono", monospace;
 }
+
+body p{
+    font-size: 0.75em;
+}
+
+
+/* =========================================================== Header */
+header .navbar_brand {
+    font-size: 2rem;
+    font-family: "Silkscreen", sans-serif;
+    text-decoration: none;
+    
+}
+
+.dropdown-menu a:hover {
+    background-color: #3f4045;
+    color: white;
+}
+
+
+.dropdown-item {
+    color: gainsboro;  
+}
+
+
+
+
+/* =========================================================== Main */
+main .col-md-4{
+    min-width: 250px;
+    max-width: 300px;
+}
+
+main .card {
+    margin-bottom: 6rem;
+    background-color: #343a40;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 41, 0.2); 
+    border-radius: 0;
+
+}
+
+main .card-img-top {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    }
+
+main .card-title{
+    opacity: 1;
+}
+
+main .card-text{
+    opacity: 0; 
+}
+
+main .card:hover .card-title{
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+main .card:hover .card-text{
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+
+/* =========================================================== Footer */
+footer{
+    background-color: #343a40;
+    color: white;
+
+}
+
+footer .card{
+    background-color: #5667ca;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 41, 0.2);
+}
+
+.btn-social {
+    color: #005fd7;
+    background-color: #cbdbfc;
+  }
+
+  .btn-social:hover {
+    color: #fff;
+    background-color: #639bff;
+  }
+  

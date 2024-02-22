@@ -9,24 +9,32 @@
     <link rel="stylesheet" href="css/site.css">
     <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="images/brand/PortfolioBrand30x30.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Silkscreen&display=swap" rel="stylesheet">
 </head>
 
+
 <body>
-    <!-- HELLO HEADER/NAV -->
+    <!-- HELLO HEADER -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container">
                 <a class="navbar_brand" href="index.html">
-                    <img src="images/brand/PortfolioBrand30x30.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    <img src="images/brand/PortfolioBrand30x30.png" width="30" height="30" class="d-inline-block align-center" alt="">
+                    <!--
+                    <h1 class="silkscreen-regular d-inline-block"><span class="badge badge-secondary">Noa.Portfolio</span></h1>
+                    -->
                     Portfolio
                 </a>
-                
                 <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarCollapse" 
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toglle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="collapse navbar-collapse" id="navbarCollapse"> <!--  -->
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -38,11 +46,11 @@
                         -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true"    aria-expanded="false">
+                            aria-haspopup="true" aria-expanded="false">
                             Projects
                             </a>
 
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu bg-dark border-0" aria-labelledby="navbarDropdown"> <!-- BG-DARK? -->
                                 <a class="dropdown-item" href="---.html">Project 1</a>
                                 <a class="dropdown-item" href="---.html">Project 2</a>
                                 <a class="dropdown-item" href="---.html">Project 3</a>
@@ -60,51 +68,127 @@
     </header>
     
 
-<!-- HELLO LOADING BAR
-    <div class="container mt-4 mb-4">
-        Becoming Front-End Developer...
-        <div class="progress">
-            <div class="progress-bar" style="width:10%" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    <!-- HELLO MAIN -->
+    <main class="text-center">
+        <div class="container py-4 text-light">
+
+            <div class="row my-4">
+                <div class="col-md">
+                    <h2 class="text">PROJECTS</h2>
+                </div>
             </div>
+
+    <!-- GALLERY -->
+            <div class="row justify-content-center">
+
+                <div class="col-md-4"> 
+                    <div class="card">
+                        <img src="images/SS.jpg" class="card-img-top p-4" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">PROJECT</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!--
+                            <span class="badge badge-primary">Primary</span>
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 offset-md-1">  
+                    <div class="card">
+                        <img src="images/IFD.png" class="card-img-top p-4" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">PROJECT</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/TV2.jpg" class="card-img-top p-4" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">PROJECT</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 offset-md-1">  
+                    <div class="card">
+                        <img src="images/PP.png" class="card-img-top p-4" alt="..."> 
+                        <div class="card-body">
+                            <h4 class="card-title">PROJECT</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>  
         </div>
-    </div>
--->
+    </main>
 
-    <!-- HELLO GALLERY -->
-    <div class="container mt-2">
-        <h2 class="text-center mb">PROJECTS</h2>
-
-        <div class="row mt-4 mb-4" style="height: 500px;">
-            <div class="col-md-4 offset-md-1 bg-dark mh-75">  
-                <img src="images/brand/Placeholder.png" class="img-fluid" alt="Some meta about the image"> 
-                <h2 class="text-center">Een project</h2>
-            </div>
-            <div class="col-md-4 offset-md-2 bg-dark">                  
-                <img src="images/IFD.png" class="img-fluid" alt="Some meta about the image">
-                <h2 class="text-center">Een project</h2>
-            </div>
-        </div>
-
-        <div class="row mt-4 mb-4" style="height: 500px;">
-            <div class="col-md-4 offset-md-1 bg-dark">  
-                <img src="images/brand/Placeholder.png" class="img-fluid" alt="Some meta about the image"> 
-                <h2 class="text-center">Een project</h2>
-            </div>
-            <div class="col-md-4 offset-md-2 bg-dark">                  
-                <img src="images/IFD.png" class="img-fluid" alt="Some meta about the image">
-                <h2 class="text-center">Een project</h2>
-            </div>
-        </div>
-
-
-    </div>
 
     <!-- HELLO FOOTER-->
-    <footer>
+    <footer class="text-center">
         
+        <div class="container mt-4 p-4">
+          
+            <div class="row">
+
+                <div class="col-md-6"> 
+                    <div class="card text-left p-4">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Lets get in touch!</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            
+                            <a class="btn btn-outline-light" href="#!" role="button">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        
+                            <a class="btn btn-outline-light" href="#!" role="button">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a class="btn btn-social" href="#!" role="button">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            noavanb@gmail.com
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                          ...
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+
+        <div class="card-footer">
+            2024
+        </div> 
     </footer>
+
+
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.js"></script>
+
+    <script src="https://kit.fontawesome.com/52e072426f.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
