@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/site.css">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/brand/PortfolioBrand30x30.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- HELLO HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <a class="navbar_brand" href="index.html">
+                    <img src="images/brand/PortfolioBrand30x30.png" width="30" height="30" class="d-inline-block align-center" alt="">
+                    <!--
+                    <h1 class="silkscreen-regular d-inline-block"><span class="badge badge-secondary">Noa.Portfolio</span></h1>
+                    -->
+                    Portfolio
+                </a>
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarCollapse" 
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toglle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse"> <!--  -->
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <!--
+                        <li class="nav-item">
+                            <a class="nav-link" href="projectX.html">Projects</a>
+                        </li>
+                        -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Projects
+                            </a>
+
+                            <div class="dropdown-menu bg-dark border-0" aria-labelledby="navbarDropdown"> <!-- BG-DARK? -->
+                                <a class="dropdown-item" href="---.html">Project 1</a>
+                                <a class="dropdown-item" href="---.html">Project 2</a>
+                                <a class="dropdown-item" href="---.html">Project 3</a>
+                                <a class="dropdown-item" href="---.html">Project 4</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HELLO MAIN -->
+    <main>
+        <div class="container my-4 text-light">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Hey!</h5>
+                            <p class="card-text">Would you like to leave some feedback?</p>
+                          
+                            <a class="btn btn-primary m-2" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Yes
+                            </a>
+                            <button class="btn btn-primary m-2" type="button" data-toggle="collapse" data-target="#collapseFeedbackNo" aria-expanded="false" aria-controls="collapseFeedbackNo">
+                            No
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="collapse" id="collapseExample">
+                <!--<div class="card card-body">-->
+                <form>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="diNoasaur@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-5">
+                            <input type="firstname" class="form-control" id="inputFirstName" placeholder="First name">
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="lastname" class="form-control" id="inputLastName" placeholder="Last name">
+                        </div>
+
+                    </div>
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Rate this site!</legend>
+                            <div class="col-sm-10">
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">
+                                        <i class="far fa-star"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                    <div class="form-group row">
+                        <div class="col-sm-2">Checkbox</div>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Example checkbox
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="collapse" id="collapseFeedbackNo">
+                <img  src="images/sadCatMeme.jpg" class="img-fluid" alt="SAD" style="width: 300px; height: 300px;">
+                <!--    <div class="collapse" id="collapseFeedbackNo">
+                                <div class=""
+                                <i class="far fa-frown" style="font-size: 3rem;"></i>
+                        </div> 
+                -->
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!-- HELLO FOOTER -->
+    <footer>
+        
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src="https://kit.fontawesome.com/52e072426f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
