@@ -51,7 +51,7 @@
                             </a>
 
                             <div class="dropdown-menu bg-dark border-0" aria-labelledby="navbarDropdown"> <!-- BG-DARK? -->
-                                <a class="dropdown-item" href="---.html">Project 1</a>
+                                <a class="dropdown-item" href="testSidefillGrid.html">Grid-Testing</a>
                                 <a class="dropdown-item" href="---.html">Project 2</a>
                                 <a class="dropdown-item" href="---.html">Project 3</a>
                                 <a class="dropdown-item" href="---.html">Project 4</a>
@@ -84,6 +84,10 @@
                             <button class="btn btn-primary m-2" type="button" data-toggle="collapse" data-target="#collapseFeedbackNo" aria-expanded="false" aria-controls="collapseFeedbackNo">
                             No
                             </button>
+
+                            <button class="btn btn-primary m-2" type="button" id="submitFormButton">
+                                Test
+                            </button>
                         </div>
                     </div>  
                 </div>
@@ -91,13 +95,17 @@
 
             <div class="collapse" id="collapseExample">
                 <!--<div class="card card-body">-->
-                <form>
+                <form> <!-- Set to POST with working server    ... action="/" method="GET" -->
+
+                    <!-- E-MAIL INPUT -->
                     <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="diNoasaur@example.com">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="diNoasaur@example.com">
                         </div>
                     </div>
+
+                    <!-- NAME INPUT -->
                     <div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-5">
@@ -106,57 +114,43 @@
                         <div class="col-sm-5">
                             <input type="lastname" class="form-control" id="inputLastName" placeholder="Last name">
                         </div>
-
                     </div>
 
-                    <fieldset class="form-group">
+                    <!-- STAR RATING INPUT -->
+                    <fieldset class="form-group"> <!-- Fieldset?  -->
                         <div class="row">
-                            <legend class="col-form-label col-sm-2 pt-0">Rate this site!</legend>
+                            <legend class="col-form-label col-sm-2 pt-0">Rate this site!</legend> <!-- Legend ? -->
                             <div class="col-sm-10">
 
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">
-                                        <i class="far fa-star"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </label>
+
+                                <div class="form-check rating">
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label class="star" for="star5" title="Awesome" aria-hidden="true"></label>
+                                    
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label class="star" for="star4" title="Great" aria-hidden="true"></label>
+
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label class="star" for="star3" title="Good" aria-hidden="true"></label>
+
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label class="star" for="star2" title="Okay" aria-hidden="true"></label>
+
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label class="star" for="star1" title="Bad" aria-hidden="true"></label>
                                 </div>
                             </div>
                         </div>
 
+                    
+                    <!-- FEEDBACK INPUT -->
+                    <div class="form-group">
+                        <label for="feedbackTexterea">Example textarea</label>
+                        <textarea class="form-control" id="feedbackTexterea" rows="3"></textarea>
+                    </div>
+
+                    
+                    <!-- CHECK INPUT -->
                     </fieldset>
                     <div class="form-group row">
                         <div class="col-sm-2">Checkbox</div>
@@ -170,9 +164,10 @@
                         </div>
                     </div>
 
+                    <!-- SEND INPUT -->
                     <div class="form-group row">
                         <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <button class="btn btn-primary" type="submit">Send</button>
                         </div>
                     </div>
                 </form>
@@ -201,6 +196,8 @@
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.js"></script>
+
+    <script src="js/site.js"></script>
 
     <script src="https://kit.fontawesome.com/52e072426f.js" crossorigin="anonymous"></script>
 </body>
