@@ -1,28 +1,52 @@
 
-// document.querySelector("...CSS-selector (tag, class or #id)...");
+
+/**
+ const starsRating = document.querySelector(".rating");
+
+function starRatingScale (event) {
+    //let starsAmount = event.target.value;
+    //let starsAmount = starsAmount.control.input;
+
+    //console.dir(starsRating);
+    console.log(starsRating);
+}
+
+starsRating.addEventListener("mouseover", starRatingScale);
+
+ */
+
+// 
+const feedbackTextInput = document.getElementById("feedback-text");
+const remainingCharsData = document.getElementById("remaining-chars");
+
+const maxAllowedChars = feedbackTextInput.maxLength;
 
 
-// Getting all the input from form
-//    let emailInput = document.getElementById("");
-//    let fullNameInput = document.getElementById("") + document.getElementById(""); // Does this work? 
-
-//    const feedbackForm = {type:"Fiat", model:"500", color:"white"};
-
-let feedbackTextereaInput = document.getElementById("feedbackTexterea");
-
-
-function retrieveUserInput(event) {
-    //let enteredFeedbackText = feedbackTextereaInput.value;
-    //let enteredFeedbackText = event.target.value;
+function updateRemainingChars (event) {
+    const enteredText = event.target.value;
+    const enteredTextLength = enteredText.length;
     
-    let enteredFeedbackText = event.data; 
+    const remainingCharacters = maxAllowedChars - enteredTextLength;
 
-    console.log(enteredFeedbackText);
-    //console.log(event);
+    remainingCharsData.textContent = remainingCharacters;
+
+    if (remainingCharacters <= 190) {
+        //feedbackTextInput.classList.add = "warning"
+        feedbackTextInput.className = "warning form-inputfield"         // Adds warning class
+    } else {
+        feedbackTextInput.className = "form-inputfield"                 // And goes back when not in warning-zone
+    }
 }
 
 
-feedbackTextereaInput.addEventListener("input", retrieveUserInput)
+feedbackTextInput.addEventListener("input", updateRemainingChars);
+
+
+
+
+
+
+
 
 
 
