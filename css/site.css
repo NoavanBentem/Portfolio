@@ -107,7 +107,12 @@ footer .card{
 }
 
 
-
+/* ABOUT =========================================================== Button collapse */
+.feedback-option0, .feedback-option1 {
+    display:none;
+    clear:both;
+    width:100%;
+}
 
 /* ABOUT =========================================================== Email */
 
@@ -162,8 +167,6 @@ textarea#feedback-text {
   #remaining-chars.warning {
     color: #85678F;
   }
-
-
 
 /* ABOUT =========================================================== Star rating */
 

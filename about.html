@@ -80,14 +80,14 @@
                             <h5 class="card-title">Hey!</h5>
                             <p class="card-text">Would you like to leave some feedback?</p>
                           
-                            <a class="btn btn-primary m-2" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <a id="feedback-option0" class="btn btn-primary m-2">
                             Yes
                             </a>
-                            <button class="btn btn-primary m-2" type="button" data-toggle="collapse" data-target="#collapseFeedbackNo" aria-expanded="false" aria-controls="collapseFeedbackNo">
+                            <button id="feedback-option1" class="btn btn-primary m-2">
                             No
                             </button>
 
-                            <button class="btn btn-primary m-2" type="button" id="submitFormButton">
+                            <button class="btn btn-primary m-2">
                                 Test
                             </button>
                         </div>
@@ -95,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="collapse" id="collapseExample">
+            <div class="feedback-option0">
                 <!--<div class="card card-body">-->
                 <form> <!-- Set to POST with working server    ... action="/" method="GET" -->
 
@@ -184,9 +184,9 @@
             </div>
 
 
-            <div class="collapse" id="collapseFeedbackNo">
+            <div class="feedback-option1">
                 <img  src="images/sadCatMeme.jpg" class="img-fluid" alt="SAD" style="width: 300px; height: 300px;">
-                <!--    <div class="collapse" id="collapseFeedbackNo">
+                <!--    <div class="collapse" id="collapse-no">
                                 <div class=""
                                 <i class="far fa-frown" style="font-size: 3rem;"></i>
                         </div> 
@@ -206,6 +206,7 @@
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     
 

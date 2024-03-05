@@ -15,6 +15,16 @@ starsRating.addEventListener("mouseover", starRatingScale);
 
  */
 
+// ======================================== This is Jquery
+$(".btn").click(function (e) {
+    e.preventDefault();
+    
+    $('[class^=feedback-option]').not($('.'+this.id)).hide();          
+        
+    $('.'+this.id).slideToggle(500);
+});
+
+
 // 
 const feedbackTextInput = document.getElementById("feedback-text");
 const remainingCharsData = document.getElementById("remaining-chars");
