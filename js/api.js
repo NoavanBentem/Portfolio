@@ -1,6 +1,6 @@
-var apiKey = '974ce39d4617618fcffe9b89efde24d0';
+// Open weather api 
+var apiKey = 'key';
 var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Amsterdam&appid=${apiKey}&units=metric`;
-
 
 const outputElement = document.getElementById('weather-output');
 
@@ -27,3 +27,18 @@ fetch(apiUrl)
   .catch(error => {
     console.error('Error:', error);
   });
+
+
+  /*
+// Fetch api zelda 
+const zeldaResult = document.getElementById("zelda-output");
+
+
+const getZeldaData = async () => {
+  const response = await fetch('https://zelda.fanapis.com/api/games?limit=2');
+  const myJson = await response.json();
+
+  zeldaResult.innerHTML = `<p>Result: ${myJson} </p>`;
+}
+*/
+
