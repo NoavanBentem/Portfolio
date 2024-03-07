@@ -107,6 +107,13 @@ footer .card{
 }
 
 
+
+
+/* ABOUT =========================================================== Side bar */
+.side-bar {
+    min-height: 1200px;
+}
+
 /* ABOUT =========================================================== Button collapse */
 .feedback-option0, .feedback-option1 {
     display:none;
